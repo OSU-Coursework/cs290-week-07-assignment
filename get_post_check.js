@@ -13,12 +13,13 @@ app.use(bodyParser.json());
 // set up templating system for displaying content
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 3000);
+app.set('port', 5483);
 
 // all content in this app is loaded from the default '/' page
 app.get('/',function(req,res){
     // only display GET requests if data has been retrieved
-    if (!(Object.entries(req.query).length === 0 && req.query.constructor === Object)) {
+//    if (!(Object.entries(req.query).length === 0 && req.query.constructor === Object)) {
+    if (!(Object.keys(req.query).length === 0 && req.query.constructor === Object)) {
         // I did NOT copy/paste this code, however, after studying this week's lectures
         // this approach really seems to make the most sense!
         let queryParms = [];
