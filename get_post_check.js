@@ -19,6 +19,7 @@ app.set('port', 5483);
 app.get('/',function(req,res){
     // only display GET requests if data has been retrieved
 //    if (!(Object.entries(req.query).length === 0 && req.query.constructor === Object)) {
+    // this line needed to be changed to work on flip servers (doesn't use ECMA7+?)
     if (!(Object.keys(req.query).length === 0 && req.query.constructor === Object)) {
         // I did NOT copy/paste this code, however, after studying this week's lectures
         // this approach really seems to make the most sense!
