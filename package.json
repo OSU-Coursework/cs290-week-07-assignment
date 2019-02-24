@@ -1,0 +1,18 @@
+{
+  "name": "week_07_assignment",
+  "version": "1.0.0",
+  "description": "GET and POST Checker",
+  "main": "get_post_check.js",
+  "dependencies": {
+    "body-parser": "^1.13.3000",
+    "express": "^4.13.2",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.11.3",
+    "mysql": "^2.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Casey Nord",
+  "license": "ISC"
+}
